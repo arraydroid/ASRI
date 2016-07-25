@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/soId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="6dip"
+        android:paddingLeft="6dip"
+        android:textColor="#0277bd"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:text="Customer Name"/>
+
+    <TextView
+        android:id="@+id/salesmanId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="6dip"
+        android:text="salesman"/>
+
+    <TextView
+        android:id="@+id/remarkId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="6dip"
+        android:text="remark" />
+</LinearLayout>

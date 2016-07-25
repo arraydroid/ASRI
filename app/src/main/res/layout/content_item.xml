@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/iron"
+    android:padding="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.DetailActivity">
+
+    <EditText
+        android:id="@+id/ed_customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/ed_id_so"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/ed_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/ed_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/ed_salesman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvitem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtCustomerNameItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/circle"
+                android:text="Nama Customer"
+                android:textColor="@color/colorAccentGreen"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtsoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtCustomerNameItem"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/circle"
+                android:text="ID SO"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/red_light"
+                android:textStyle="bold" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/circle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/no_image"
+                app:civ_border_color="@color/colorAccentGreen"
+                app:civ_border_width="2dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#212121"
+                app:civ_shadow_radius="10" />
+
+            <TextView
+                android:id="@+id/txtDateItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txtCustomerNameItem"
+                android:layout_alignLeft="@+id/txtCustomerNameItem"
+                android:layout_alignRight="@+id/txtCustomerNameItem"
+                android:layout_alignStart="@+id/txtCustomerNameItem"
+                android:layout_below="@+id/txtsoId"
+                android:text="Tanggal Order"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtRemarkItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txtDateItem"
+                android:layout_alignLeft="@+id/txtDateItem"
+                android:layout_alignRight="@+id/txtDateItem"
+                android:layout_alignStart="@+id/txtDateItem"
+                android:layout_below="@+id/txtDateItem"
+                android:text="Catatan"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtSalesmanItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txtRemarkItem"
+                android:layout_alignLeft="@+id/txtRemarkItem"
+                android:layout_alignRight="@+id/txtRemarkItem"
+                android:layout_alignStart="@+id/txtRemarkItem"
+                android:layout_below="@+id/txtRemarkItem"
+                android:text="Salesman"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circle"
+                android:layout_marginTop="10dp"
+                android:divider="@null" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_sync_so"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Sinkronkan Data"
+                android:textColor="#fff" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_cast_off_light"
+                android:title="Beranda" />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sales_order"
+            android:icon="@drawable/ic_local_grocery_store_black_36dp"
+            android:title="Sales Order" />
+        <item
+            android:id="@+id/check_in_user"
+            android:icon="@drawable/ic_linked_camera_black_36dp"
+            android:title="Barcode/Absensi/Attendance" />
+
+        <!--<item
+            android:id="@+id/nav_list_sales_order"
+            android:icon="@drawable/ic_featured_play_list_black_36dp"
+            android:title="List Sales Order" />
+                <item
+                    android:id="@+id/nav_sales_return"
+                    android:icon="@drawable/ic_remove_shopping_cart_black_36dp"
+                    android:title="Sales Return" />
+                <item
+                    android:id="@+id/nav_delivery_order"
+                    android:icon="@drawable/ic_local_shipping_black_36dp"
+                    android:title="Delivery Order" />
+                <item
+                    android:id="@+id/nav_delivery_return"
+                    android:icon="@drawable/ic_location_off_black_36dp"
+                    android:title="Delivery Return" />
+                <item
+                    android:id="@+id/nav_delivery_pending"
+                    android:icon="@drawable/ic_pause_circle_filled_black_36dp"
+                    android:title="Delivery Pending" />
+-->
+    </group>
+
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_report_black_36dp"
+                android:title="About App." />
+
+        </menu>
+    </item>
+</menu>
